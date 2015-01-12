@@ -1,4 +1,5 @@
 ﻿using MYOB.AccountRight.SDK.Contracts.Version2.Sale;
+using System.Collections.Generic;
 
 namespace MYOB.AccountRight.SDK.Contracts.Version2.Purchase
 {
@@ -12,6 +13,6 @@ namespace MYOB.AccountRight.SDK.Contracts.Version2.Purchase
         /// <summary>
         /// The lines for a subclassed <see cref="Order"/>
         /// </summary>
-        public TOrderLine[] Lines { get; set; }
+        public IEnumerable<TOrderLine> Lines { get; set; }
     }
 }

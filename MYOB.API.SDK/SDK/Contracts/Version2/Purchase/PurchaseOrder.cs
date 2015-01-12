@@ -8,7 +8,7 @@ namespace MYOB.AccountRight.SDK.Contracts.Version2.Purchase
     /// <summary>
     /// Describe the Purchase/Order resource
     /// </summary>
-    public class PurchaseOrder : BaseEntity
+    public class PurchaseOrder : BaseEntity, IOrder
     {
         /// <summary>
         /// Purchase order number

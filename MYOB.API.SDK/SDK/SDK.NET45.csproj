@@ -191,6 +191,7 @@
     <Compile Include="Contracts\Version2\Purchase\DebitSettlementLine.cs" />
     <Compile Include="Contracts\Version2\Purchase\DebitSettlementLineType.cs" />
     <Compile Include="Contracts\Version2\Purchase\DebitSettlementLink.cs" />
+    <Compile Include="Contracts\Version2\Purchase\IOrder.cs" />
     <Compile Include="Contracts\Version2\Purchase\ItemBill.cs" />
     <Compile Include="Contracts\Version2\Purchase\ItemBillLine.cs" />
     <Compile Include="Contracts\Version2\Purchase\MiscellaneousBill.cs" />
