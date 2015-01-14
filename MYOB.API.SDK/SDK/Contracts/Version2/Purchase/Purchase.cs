@@ -1,6 +1,5 @@
 ﻿using MYOB.AccountRight.SDK.Contracts.Version2.Contact;
 using MYOB.AccountRight.SDK.Contracts.Version2.GeneralLedger;
-using MYOB.AccountRight.SDK.Contracts.Version2.Sale;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,88 +9,88 @@ using System.Threading.Tasks;
 namespace MYOB.AccountRight.SDK.Contracts.Version2.Purchase
 {
     /// <summary>
-    /// Interface for similar fields between Bill and PurchaseOrder
+    /// Purchase
     /// </summary>
-    public interface IOrder
+    public class Purchase : BaseEntity
     {
         /// <summary>
         /// Order number
         /// </summary>
-        string Number { get; set; }
-        
+        public string Number { get; set; }
+
         /// <summary>
         /// Order date
         /// </summary>
-        DateTime Date { get; set; }
-        
+        public DateTime Date { get; set; }
+
         /// <summary>
         /// Supplier invoice number
         /// </summary>
-        string SupplierInvoiceNumber { get; set; }
-        
+        public string SupplierInvoiceNumber { get; set; }
+
         /// <summary>
         /// Supplier
         /// </summary>
-        SupplierLink Supplier { get; set; }
-        
+        public SupplierLink Supplier { get; set; }
+
         /// <summary>
         /// Ship to address
         /// </summary>
-        string ShipToAddress { get; set; }
-        
+        public string ShipToAddress { get; set; }
+
         /// <summary>
         /// Is tax inclusive
         /// </summary>
-        bool IsTaxInclusive { get; set; }
-        
+        public bool IsTaxInclusive { get; set; }
+
         /// <summary>
         /// Is reportable
         /// </summary>
-        bool? IsReportable { get; set; }
-        
+        public bool? IsReportable { get; set; }
+
         /// <summary>
         /// Subtotal
         /// </summary>
-        decimal Subtotal { get; set; }
-        
+        public decimal Subtotal { get; set; }
+
         /// <summary>
         /// Total tax
         /// </summary>
-        decimal TotalTax { get; set; }
-        
+        public decimal TotalTax { get; set; }
+
         /// <summary>
         /// Total amount
         /// </summary>
-        decimal TotalAmount { get; set; }
-        
+        public decimal TotalAmount { get; set; }
+
         /// <summary>
         /// Journal memo
         /// </summary>
-        string JournalMemo { get; set; }
-        
+        public string JournalMemo { get; set; }
+
         /// <summary>
         /// Freight tax code
         /// </summary>
-        TaxCodeLink FreightTaxCode { get; set; }
-        
+        public TaxCodeLink FreightTaxCode { get; set; }
+
         /// <summary>
         /// Freight amount
         /// </summary>
-        decimal? Freight { get; set; }
-        
+        public decimal? Freight { get; set; }
+
         /// <summary>
         /// Category
         /// </summary>
-        CategoryLink Category { get; set; }
-        
+        public CategoryLink Category { get; set; }
+
         /// <summary>
         /// Applied to date
         /// </summary>
-        decimal AppliedToDate { get; set; }
-        
+        public decimal AppliedToDate { get; set; }
+
         /// <summary>
         /// Balance due amount
         /// </summary>
-        decimal BalanceDueAmount { get; set; }
+        public decimal BalanceDueAmount { get; set; }
     }
 }

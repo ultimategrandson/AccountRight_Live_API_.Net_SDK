@@ -192,7 +192,6 @@
     <Compile Include="Contracts\Version2\Purchase\DebitSettlementLine.cs" />
     <Compile Include="Contracts\Version2\Purchase\DebitSettlementLineType.cs" />
     <Compile Include="Contracts\Version2\Purchase\DebitSettlementLink.cs" />
-    <Compile Include="Contracts\Version2\Purchase\IOrder.cs" />
     <Compile Include="Contracts\Version2\Purchase\ItemBill.cs" />
     <Compile Include="Contracts\Version2\Purchase\ItemBillLine.cs" />
     <Compile Include="Contracts\Version2\Purchase\MiscellaneousBill.cs" />
@@ -204,6 +203,7 @@
     <Compile Include="Contracts\Version2\Purchase\ProfessionalBillLine.cs" />
     <Compile Include="Contracts\Version2\Purchase\ProfessionalPurchaseOrder.cs" />
     <Compile Include="Contracts\Version2\Purchase\ProfessionalPurchaseOrderLine.cs" />
+    <Compile Include="Contracts\Version2\Purchase\Purchase.cs" />
     <Compile Include="Contracts\Version2\Purchase\PurchaseLink.cs" />
     <Compile Include="Contracts\Version2\Purchase\ItemPurchaseOrderLine.cs" />
     <Compile Include="Contracts\Version2\Purchase\PurchaseOrder.cs" />
