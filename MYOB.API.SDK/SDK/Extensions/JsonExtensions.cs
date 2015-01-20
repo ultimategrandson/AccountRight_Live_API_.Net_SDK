@@ -22,6 +22,8 @@ namespace MYOB.AccountRight.SDK.Extensions
         {
             var serializer = new JsonSerializer();
             serializer.Converters.Add(new StringEnumConverter());
+            serializer.NullValueHandling = NullValueHandling.Ignore;
+
             using (var writer = new StringWriter())
             {
                 serializer.Serialize(writer, entity);
