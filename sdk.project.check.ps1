@@ -27,12 +27,12 @@ function Check-Same-Compile-Includes {
 try
 {
   #check each of the project files against SDK.proj (i.e. all A in B and all B in A)
-  Check-Same-Compile-Includes -srcfile '.\MYOB.API.SDK\SDK\SDK.csproj' -targetfile '.\MYOB.API.SDK\SDK\SDK.NET35.csproj'
-  Check-Same-Compile-Includes -srcfile '.\MYOB.API.SDK\SDK\SDK.NET35.csproj' -targetfile '.\MYOB.API.SDK\SDK\SDK.csproj'
-  Check-Same-Compile-Includes -srcfile '.\MYOB.API.SDK\SDK\SDK.csproj' -targetfile '.\MYOB.API.SDK\SDK\SDK.NET40.csproj'
-  Check-Same-Compile-Includes -srcfile '.\MYOB.API.SDK\SDK\SDK.NET40.csproj' -targetfile '.\MYOB.API.SDK\SDK\SDK.csproj'
-  Check-Same-Compile-Includes -srcfile '.\MYOB.API.SDK\SDK\SDK.csproj' -targetfile '.\MYOB.API.SDK\SDK\SDK.NET45.csproj'
-  Check-Same-Compile-Includes -srcfile '.\MYOB.API.SDK\SDK\SDK.NET45.csproj' -targetfile '.\MYOB.API.SDK\SDK\SDK.csproj'
+  #Check-Same-Compile-Includes -srcfile '.\MYOB.API.SDK\SDK\SDK.csproj' -targetfile '.\MYOB.API.SDK\SDK\SDK.NET35.csproj'
+  #Check-Same-Compile-Includes -srcfile '.\MYOB.API.SDK\SDK\SDK.NET35.csproj' -targetfile '.\MYOB.API.SDK\SDK\SDK.csproj'
+  #Check-Same-Compile-Includes -srcfile '.\MYOB.API.SDK\SDK\SDK.csproj' -targetfile '.\MYOB.API.SDK\SDK\SDK.NET40.csproj'
+  #Check-Same-Compile-Includes -srcfile '.\MYOB.API.SDK\SDK\SDK.NET40.csproj' -targetfile '.\MYOB.API.SDK\SDK\SDK.csproj'
+  #Check-Same-Compile-Includes -srcfile '.\MYOB.API.SDK\SDK\SDK.csproj' -targetfile '.\MYOB.API.SDK\SDK\SDK.NET45.csproj'
+  #Check-Same-Compile-Includes -srcfile '.\MYOB.API.SDK\SDK\SDK.NET45.csproj' -targetfile '.\MYOB.API.SDK\SDK\SDK.csproj'
 }
 catch [System.Exception]
 {

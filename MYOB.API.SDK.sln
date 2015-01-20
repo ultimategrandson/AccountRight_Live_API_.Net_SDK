@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{54C69256-9C55-41DC-A383-6C00EA66DB39}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -8,20 +10,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{54C692
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDK", "MYOB.API.SDK\SDK\SDK.csproj", "{F7105066-8FBF-47C3-B9D6-5D439FE025FE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDK.Test", "MYOB.API.SDK\SDK.Test\SDK.Test.csproj", "{9E27D45B-CEC4-4571-B4F6-51D6BF4FA0DE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDK.NET35", "MYOB.API.SDK\SDK\SDK.NET35.csproj", "{980CC093-31FA-4A92-89EC-17669702CE2C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDK.NET40", "MYOB.API.SDK\SDK\SDK.NET40.csproj", "{E7C4C255-4DB8-4F10-A4A6-A6A160877F29}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDK.NET45", "MYOB.API.SDK\SDK\SDK.NET45.csproj", "{33DD5156-E3B7-47FC-913D-5216019146A7}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{44138A7C-2D66-4F23-AD7C-DD9E94FFC378}"
 	ProjectSection(SolutionItems) = preProject
 		MYOB.API.SDK\SDK.Package\Package.nuspec = MYOB.API.SDK\SDK.Package\Package.nuspec
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDK.Test", "MYOB.API.SDK\SDK.Test\SDK.Test.csproj", "{9E27D45B-CEC4-4571-B4F6-51D6BF4FA0DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDK.NET45", "MYOB.API.SDK\SDK\SDK.NET45.csproj", "{33DD5156-E3B7-47FC-913D-5216019146A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,22 +25,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F7105066-8FBF-47C3-B9D6-5D439FE025FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7105066-8FBF-47C3-B9D6-5D439FE025FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7105066-8FBF-47C3-B9D6-5D439FE025FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7105066-8FBF-47C3-B9D6-5D439FE025FE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9E27D45B-CEC4-4571-B4F6-51D6BF4FA0DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9E27D45B-CEC4-4571-B4F6-51D6BF4FA0DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E27D45B-CEC4-4571-B4F6-51D6BF4FA0DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E27D45B-CEC4-4571-B4F6-51D6BF4FA0DE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{980CC093-31FA-4A92-89EC-17669702CE2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{980CC093-31FA-4A92-89EC-17669702CE2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{980CC093-31FA-4A92-89EC-17669702CE2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{980CC093-31FA-4A92-89EC-17669702CE2C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E7C4C255-4DB8-4F10-A4A6-A6A160877F29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E7C4C255-4DB8-4F10-A4A6-A6A160877F29}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E7C4C255-4DB8-4F10-A4A6-A6A160877F29}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E7C4C255-4DB8-4F10-A4A6-A6A160877F29}.Release|Any CPU.Build.0 = Release|Any CPU
 		{33DD5156-E3B7-47FC-913D-5216019146A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{33DD5156-E3B7-47FC-913D-5216019146A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33DD5156-E3B7-47FC-913D-5216019146A7}.Release|Any CPU.ActiveCfg = Release|Any CPU

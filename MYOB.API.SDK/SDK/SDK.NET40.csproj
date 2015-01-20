@@ -218,6 +218,7 @@
     <Compile Include="Contracts\Version2\Purchase\ProfessionalBillLine.cs" />
     <Compile Include="Contracts\Version2\Purchase\ProfessionalPurchaseOrder.cs" />
     <Compile Include="Contracts\Version2\Purchase\ProfessionalPurchaseOrderLine.cs" />
+    <Compile Include="Contracts\Version2\Purchase\Purchase.cs" />
     <Compile Include="Contracts\Version2\Purchase\PurchaseLink.cs" />
     <Compile Include="Contracts\Version2\Purchase\ItemPurchaseOrderLine.cs" />
     <Compile Include="Contracts\Version2\Purchase\PurchaseOrder.cs" />

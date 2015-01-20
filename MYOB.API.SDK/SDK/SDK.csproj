@@ -11,12 +11,17 @@
     <RootNamespace>MYOB.AccountRight.SDK</RootNamespace>
     <AssemblyName>MYOB.AccountRight.SDK</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Profile88</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Profile42</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
     <BaseIntermediateOutputPath>obj\Portable\</BaseIntermediateOutputPath>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -114,6 +119,7 @@
     <Compile Include="Contracts\Version2\Purchase\MiscellaneousPurchaseOrderLine.cs" />
     <Compile Include="Contracts\Version2\Purchase\ProfessionalPurchaseOrder.cs" />
     <Compile Include="Contracts\Version2\Purchase\ProfessionalPurchaseOrderLine.cs" />
+    <Compile Include="Contracts\Version2\Purchase\Purchase.cs" />
     <Compile Include="Contracts\Version2\Purchase\PurchaseOrder.cs" />
     <Compile Include="Contracts\Version2\Purchase\ItemPurchaseOrder.cs" />
     <Compile Include="Contracts\Version2\Purchase\ServicePurchaseOrder.cs" />
