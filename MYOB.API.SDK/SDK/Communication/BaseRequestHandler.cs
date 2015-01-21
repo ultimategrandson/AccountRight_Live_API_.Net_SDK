@@ -13,6 +13,7 @@ using System.Threading;
 
 #if COMPRESSION
 using System.IO.Compression;
+using MYOB.AccountRight.SDK.Contracts;
 #else
 using SharpCompress.Compressor;
 using SharpCompress.Compressor.Deflate;
@@ -104,6 +105,9 @@ namespace MYOB.AccountRight.SDK.Communication
                 {
                     entity = ExtractJSonEntity<T>(response);
                 }
+
+                if (entity is IETag)
+                    (entity as IETag).ETag = (response.Headers["ETag"] ?? string.Empty).Replace("\"", string.Empty);
 
                 return new Tuple<HttpStatusCode, string, T>(statusCode, location, entity);
             }
