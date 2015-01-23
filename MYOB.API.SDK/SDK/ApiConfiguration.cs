@@ -42,7 +42,7 @@ namespace MYOB.AccountRight.SDK
         /// Initializes an instance of the ApiConfiguration class (usually used for network mode)
         /// </summary>
         /// <param name="apiBaseUrl"></param>
-        public ApiConfiguration(string apiBaseUrl) : this(null, null, null, apiBaseUrl)
+        public ApiConfiguration(string apiBaseUrl, bool generateUris = true) : this(null, null, null, apiBaseUrl, generateUris)
         {}
 
         /// <summary>
