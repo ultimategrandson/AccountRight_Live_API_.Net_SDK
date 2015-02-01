@@ -92,7 +92,7 @@ namespace MYOB.AccountRight.SDK.Communication
         {
             request.Headers[HttpRequestHeader.Authorization] = string.Format("Bearer {0}", oauth.Maybe(_ => _.AccessToken, string.Empty));
             request.Headers[HttpRequestHeader.AcceptEncoding] = "gzip";
-            
+
             IgnoreError(() =>
                 {
 #if PORTABLE
@@ -113,7 +113,7 @@ namespace MYOB.AccountRight.SDK.Communication
 
             request.Headers["x-myobapi-key"] = configuration.ClientId;
             request.Headers["x-myobapi-version"] = "v2";
-            request.Headers["x-myobapi-cftoken"] = Convert.ToBase64String(Encoding.UTF8.GetBytes(string.Format("{0}:{1}", 
+            request.Headers["x-myobapi-cftoken"] = Convert.ToBase64String(Encoding.UTF8.GetBytes(string.Format("{0}:{1}",
                 credentials.Maybe(_ => _.Username).Maybe(_ => _, string.Empty), credentials.Maybe(_ => _.Password).Maybe(_ => _, string.Empty))));
         }
 
@@ -124,7 +124,8 @@ namespace MYOB.AccountRight.SDK.Communication
         /// <param name="tag"></param>
         public void SetIsNoneMatch(WebRequest request, string tag)
         {
-            request.Headers[HttpRequestHeader.IfNoneMatch] = tag;
+            if (tag != null)
+                request.Headers[HttpRequestHeader.IfNoneMatch] = tag;
         }
 
         /// <summary>
@@ -145,7 +146,7 @@ namespace MYOB.AccountRight.SDK.Communication
         public Stream ExtractCompressedEntity(WebResponse response)
         {
             var responseStream = response.GetResponseStream();
-            return new GZipStream(responseStream, CompressionMode.Decompress);         
+            return new GZipStream(responseStream, CompressionMode.Decompress);
         }
 
         /// <summary>
@@ -158,7 +159,7 @@ namespace MYOB.AccountRight.SDK.Communication
             {
                 a();
             }
-            catch(Exception){}
+            catch (Exception) { }
         }
     }
 }
