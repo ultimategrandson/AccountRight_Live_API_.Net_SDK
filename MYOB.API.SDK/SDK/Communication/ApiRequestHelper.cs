@@ -125,7 +125,7 @@ namespace MYOB.AccountRight.SDK.Communication
         public void SetIsNoneMatch(WebRequest request, string tag)
         {
             if (tag != null)
-                request.Headers[HttpRequestHeader.IfNoneMatch] = tag;
+                request.Headers[HttpRequestHeader.IfNoneMatch] = "\"" + tag + "\"";
         }
 
         /// <summary>
