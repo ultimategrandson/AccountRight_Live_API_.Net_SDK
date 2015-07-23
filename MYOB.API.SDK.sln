@@ -1,22 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{54C69256-9C55-41DC-A383-6C00EA66DB39}"
-	ProjectSection(SolutionItems) = preProject
-		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.exe = .nuget\NuGet.exe
-		.nuget\NuGet.targets = .nuget\NuGet.targets
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{44138A7C-2D66-4F23-AD7C-DD9E94FFC378}"
-	ProjectSection(SolutionItems) = preProject
-		MYOB.API.SDK\SDK.Package\Package.nuspec = MYOB.API.SDK\SDK.Package\Package.nuspec
-	EndProjectSection
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDK.Test", "MYOB.API.SDK\SDK.Test\SDK.Test.csproj", "{9E27D45B-CEC4-4571-B4F6-51D6BF4FA0DE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDK.NET45", "MYOB.API.SDK\SDK\SDK.NET45.csproj", "{33DD5156-E3B7-47FC-913D-5216019146A7}"
 EndProject
 Global
@@ -25,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9E27D45B-CEC4-4571-B4F6-51D6BF4FA0DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9E27D45B-CEC4-4571-B4F6-51D6BF4FA0DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9E27D45B-CEC4-4571-B4F6-51D6BF4FA0DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9E27D45B-CEC4-4571-B4F6-51D6BF4FA0DE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{33DD5156-E3B7-47FC-913D-5216019146A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{33DD5156-E3B7-47FC-913D-5216019146A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33DD5156-E3B7-47FC-913D-5216019146A7}.Release|Any CPU.ActiveCfg = Release|Any CPU

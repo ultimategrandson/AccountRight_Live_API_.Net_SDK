@@ -7,5 +7,4 @@ MYOB.API.SDK/**/obj/**/*
 *.user
 
 /TestResult.xml
-/MYOB.API.SDK/SDK/MYOB.API.SDK.snk
 /*.nupkg
