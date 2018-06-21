@@ -113,8 +113,10 @@ namespace MYOB.AccountRight.SDK.Communication
 
             request.Headers["x-myobapi-key"] = configuration.ClientId;
             request.Headers["x-myobapi-version"] = "v2";
-            request.Headers["x-myobapi-cftoken"] = Convert.ToBase64String(Encoding.UTF8.GetBytes(string.Format("{0}:{1}",
-                credentials.Maybe(_ => _.Username).Maybe(_ => _, string.Empty), credentials.Maybe(_ => _.Password).Maybe(_ => _, string.Empty))));
+
+            if (credentials != null)
+                request.Headers["x-myobapi-cftoken"] = Convert.ToBase64String(Encoding.UTF8.GetBytes(string.Format("{0}:{1}",
+                    credentials.Maybe(_ => _.Username).Maybe(_ => _, string.Empty), credentials.Maybe(_ => _.Password).Maybe(_ => _, string.Empty))));
         }
 
         /// <summary>
